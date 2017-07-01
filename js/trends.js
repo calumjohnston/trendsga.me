@@ -2,7 +2,7 @@
 
 $( document ).ready(function() {
 
-var words_list = ["hello","volvo","pumpkin","automotive","design","construction","carrot","ship"];
+var words_list = ["hello","hard","pumpkin","automotive","design","construction","carrot","ship"];
 
 function generateWord(){
 	var random_word = words_list[Math.floor(Math.random()*words_list.length)];

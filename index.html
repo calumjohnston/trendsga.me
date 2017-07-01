@@ -4,9 +4,83 @@
 	<title>trends game</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/trends.js"></script>
+	<style type="text/css">
+		html,body{
+			height:100vh;
+			margin:0;
+			padding:0;
+			background: #FF4E50;  /* fallback for old browsers */
+			background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+		}
+		.container{
+			height:100%;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+		}
+		section#app{
+			background:white;
+			text-align:center;
+			padding:40px;
+			border-radius: 2px;
+    		box-shadow: 0 2px 8px rgba(0,0,0,.33);
+			height:400px;
+
+		}
+		button#new-word-button{
+			background:#FF574D;
+			color:white;
+			font-weight:bold;
+			font-size:15px;
+			height:50px;
+			width:200px;
+			border:none;
+			border-radius:2px;
+			box-shadow: 0 2px 8px rgba(0,0,0,.33);
+			margin-bottom:40px;
+			outline:none;
+		}
+		.word-inputs{
+			display:flex;
+			justify-content:center;
+		}
+					
+		input[type="text"]{
+			height:50px;
+			width:200px;
+			padding:0px 20px;
+			font-size:18px;
+			border:1px solid rgb(220,220,220);
+		}
+		input[type="text"]:focus{
+			outline:2px solid #FF574D;
+		}
+		p#random-word{
+			margin:0;
+			display:inline-block;
+			height:50px;
+			line-height:50px;
+			font-weight:bold;
+			font-size:24px;
+			width:160px;
+			margin:0px 20px;
+			text-align:center;
+			border-bottom:1px dashed rgb(220,220,220);
+		}
+	</style>
 </head>
 <body>
-<button id="new-word-button">Generate random word</button>
-<p id="random-word"></p>
+<div class="container">
+	<section id="app">
+		<button id="new-word-button">NEW WORD</button>
+		<div class="word-inputs">
+			<input type="text" placeholder="before" id="word-before">
+			<p id="random-word"></p>
+			<input type="text" placeholder="after" id="word-after">
+		</div>
+	</section>
+</div>
 </body>
 </html>
