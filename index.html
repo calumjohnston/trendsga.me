@@ -9,9 +9,10 @@
 			height:100vh;
 			margin:0;
 			padding:0;
-			background: #FF4E50;  /* fallback for old browsers */
-			background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
-			background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+			background: #00d2ff;  /* fallback for old browsers */
+			background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
 		}
 		.container{
@@ -30,7 +31,8 @@
 
 		}
 		button#new-word-button{
-			background:#FF574D;
+			cursor:pointer;
+			background:#13B7F2;
 			color:white;
 			font-weight:bold;
 			font-size:15px;
@@ -38,9 +40,11 @@
 			width:200px;
 			border:none;
 			border-radius:2px;
-			box-shadow: 0 2px 8px rgba(0,0,0,.33);
 			margin-bottom:40px;
 			outline:none;
+		}
+		button#new-word-button:hover{
+			transform:scale(1.02);
 		}
 		.word-inputs{
 			display:flex;
@@ -55,7 +59,7 @@
 			border:1px solid rgb(220,220,220);
 		}
 		input[type="text"]:focus{
-			outline:2px solid #FF574D;
+			outline:2px solid #13B7F2;
 		}
 		p#random-word{
 			margin:0;
