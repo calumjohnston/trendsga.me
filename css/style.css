@@ -1,0 +1,107 @@
+		html,body{
+			height:100vh;
+			margin:0;
+			padding:0;
+			background: #00d2ff;  /* fallback for old browsers */
+			background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		}
+		.container{
+			height:100%;
+			display:flex;
+			justify-content:center;
+			align-items: flex-start;
+		}
+		section#app{
+			display:flex;
+			justify-content:flex-start;
+			align-items:center;
+			flex-direction: column;
+			position:relative;
+			background:white;
+			text-align:center;
+			margin-top: 80px;
+			margin-bottom: 80px;
+			padding:40px;
+			border-radius: 2px;
+			box-shadow: 0 2px 8px rgba(0,0,0,.33);
+			min-height: 660px;
+		}
+		button{
+			font-family:'Baloo';
+			cursor:pointer;
+			background:#13B7F2;
+			color:white;
+			font-weight:bold;
+			font-size:15px;
+			height:50px;
+			width:200px;
+			border:none;
+			border-radius:2px;
+			margin-bottom:40px;
+			outline:none;
+		}
+		button#new-word-button:hover{
+			transform:scale(1.02);
+		}
+		button#add-player-button{
+			margin-bottom: 40px;
+		}
+		.button-disabled{
+			opacity:0.5;
+		}
+		.inputs-container{
+			height:auto;
+		}
+		.word-inputs{
+			display:flex;
+			justify-content:center;
+			margin-bottom:20px;
+		}
+					
+		input[type="text"]{
+			font-family:'Baloo';
+			height:50px;
+			width:200px;
+			padding:0px 20px;
+			font-size:18px;
+			border:1px solid rgb(220,220,220);
+		}
+		input[type="text"]:focus{
+			outline:2px solid #13B7F2;
+		}
+		p.random-word{
+			font-family:'Baloo';
+			margin:0;
+			display:inline-block;
+			height:50px;
+			line-height:50px;
+			font-weight:bold;
+			font-size:24px;
+			width:160px;
+			margin:0px 20px;
+			text-align:center;
+			border-bottom:1px dashed rgb(220,220,220);
+		}
+		button#go-button{
+			position: absolute;
+			bottom:0px;
+		}
+		.visible-iframe{
+			position: relative;
+			width: 510px;
+			height:230px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			overflow:hidden;
+			/* border: 2px solid; */
+			margin-bottom: 90px;
+		}
+		iframe{
+			width:680px;
+			height:530px;
+			position:absolute;
+			top: -60px;
+			left: -2px;
+		}

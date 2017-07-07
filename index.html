@@ -2,88 +2,27 @@
 <html>
 <head>
 	<title>trends game</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/trends.js"></script>
-	<style type="text/css">
-		html,body{
-			height:100vh;
-			margin:0;
-			padding:0;
-			background: #00d2ff;  /* fallback for old browsers */
-			background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
-			background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-		}
-		.container{
-			height:100%;
-			display:flex;
-			justify-content:center;
-			align-items:center;
-		}
-		section#app{
-			background:white;
-			text-align:center;
-			padding:40px;
-			border-radius: 2px;
-    		box-shadow: 0 2px 8px rgba(0,0,0,.33);
-			height:400px;
-
-		}
-		button#new-word-button{
-			cursor:pointer;
-			background:#13B7F2;
-			color:white;
-			font-weight:bold;
-			font-size:15px;
-			height:50px;
-			width:200px;
-			border:none;
-			border-radius:2px;
-			margin-bottom:40px;
-			outline:none;
-		}
-		button#new-word-button:hover{
-			transform:scale(1.02);
-		}
-		.word-inputs{
-			display:flex;
-			justify-content:center;
-		}
-					
-		input[type="text"]{
-			height:50px;
-			width:200px;
-			padding:0px 20px;
-			font-size:18px;
-			border:1px solid rgb(220,220,220);
-		}
-		input[type="text"]:focus{
-			outline:2px solid #13B7F2;
-		}
-		p#random-word{
-			margin:0;
-			display:inline-block;
-			height:50px;
-			line-height:50px;
-			font-weight:bold;
-			font-size:24px;
-			width:160px;
-			margin:0px 20px;
-			text-align:center;
-			border-bottom:1px dashed rgb(220,220,220);
-		}
-	</style>
 </head>
 <body>
 <div class="container">
 	<section id="app">
-		<button id="new-word-button">NEW WORD</button>
-		<div class="word-inputs">
-			<input type="text" placeholder="before" id="word-before">
-			<p id="random-word"></p>
-			<input type="text" placeholder="after" id="word-after">
+		<button id="new-word-button">G</button>
+		<div class="input-container">
+			<div class="word-inputs 1-word-inputs">
+				<input class="button-disabled" type="text" placeholder="before" id="1-word-before">
+				<p class="random-word"></p>
+				<input class="button-disabled" type="text" placeholder="after" id="1-word-after">
+			</div>
 		</div>
+		<button id="add-player-button">Add another player</button>
+		<div class="visible-iframe">
+			<iframe class="graph" scrolling="no"></iframe>
+		</div>
+		<button id="go-button">GO!</button>
 	</section>
 </div>
 </body>
