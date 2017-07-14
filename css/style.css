@@ -36,7 +36,6 @@ html,body{
 			right: 7px;
 		}
 		.container{
-			height:100%;
 			display:flex;
 			justify-content:flex-start;
 			align-items: center;
@@ -63,6 +62,7 @@ html,body{
 			border-radius: 2px;
 			box-shadow: 0 2px 8px rgba(0,0,0,.33);
 			min-height: 400px;
+			height: auto;
 		}
 		button{
 			font-family:'Baloo';
