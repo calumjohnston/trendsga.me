@@ -40,6 +40,7 @@ html,body{
 			justify-content:flex-start;
 			align-items: center;
 			flex-direction:column;
+			padding: 0px 60px;
 		}
 		header{
 			color: white;
@@ -158,4 +159,26 @@ html,body{
 		.active{
 			opacity:1;
 			cursor:default;
+		}
+
+		@media(max-width:850px){
+			header{
+				font-size:24px;
+			}
+			p.random-word{
+				width:200px;
+			}
+			.add-remove-players{
+				flex-direction:column;
+				width:200px;
+				height:120px;
+			}
+			.word-inputs{
+				flex-direction:column;
+			}
+		}
+		@media(max-width:500px){
+			section#app{
+				width: 100%;
+			}
 		}
