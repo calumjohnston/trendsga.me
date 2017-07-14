@@ -84,6 +84,7 @@ $('body').on('input',"input", function() {
 });
 
 $("#new-word-button").on("click", function(){
+	$("input").val('');
 	current_word = generateWord();
 	$(".random-word").text(current_word);
 	$(".visible-iframe").css("display","none");
