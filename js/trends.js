@@ -19,11 +19,19 @@ function generateWord(){
 	return random_word;
 }
 function addAnotherPlayer(){
+	var disabled = "";
+	var disabledclass = "";
+	if ($('.random-word').is(':empty')){
+  		disabled = "disabled";
+	}
+	if ($('.random-word').is(':empty')){
+  		disabledclass = "disabled";
+	}
 	var new_inputs = `
 			<div class="word-inputs `+ (player_count + 1) +`-word-inputs">
-				<input type="text" placeholder="before" id="`+ (player_count + 1) +`-word-before">
+				<input type="text" class="` + disabledclass + `"  placeholder="before" id="`+ (player_count + 1) +`-word-before" `+ disabled +`/>
 				<p class="random-word">`+ current_word +`</p>
-				<input type="text" placeholder="after" id="`+ (player_count + 1) +`-word-after">
+				<input type="text" class="` + disabledclass + `" placeholder="after" id="`+ (player_count + 1) +`-word-after" `+ disabled +`/>
 			</div>`;
 
 	$('.input-container').append(new_inputs);
@@ -65,27 +73,43 @@ function buildURL(){
 }
 
 
-$('body').on('input','input', function(){
-	if($(this).val() != ""){
-		$(this).addClass("active");
-	}
+$('body').on('input',"input", function() {
+	$("#go-button").removeClass("disabled");
+	$("#go-button").prop("disabled", false);
+	$(this).siblings().not($("p")).prop("disabled",true);
+	$(this).removeClass("disabled");
+	$(this).addClass("active");
+	$(this).siblings().not($("p")).removeClass("active");
+	$(this).siblings().not($("p")).addClass("disabled");
 });
-$('body').on('blur',"input", function(){
-	if( !$(this).val() ) {
-         $(this).removeClass("active");  
-    }
-});
+
 $("#new-word-button").on("click", function(){
 	current_word = generateWord();
 	$(".random-word").text(current_word);
+	$(".visible-iframe").css("display","none");
 
+	$("input").prop("disabled", false);
+	$("input").removeClass("disabled");
 });
+
 $("#add-player-button").on("click", function(){
 
 	addAnotherPlayer();
 	
 });
+
+$("#remove-player-button").on("click", function(){
+	if($(".word-inputs").length > 1){
+		$(".word-inputs").last().remove();	
+	}
+});
+
 $("#go-button").on("click", function(){
 	buildURL();
+	$(".visible-iframe").css("display","flex");
 });
+
+
+
 });
+

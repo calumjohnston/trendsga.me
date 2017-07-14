@@ -1,4 +1,21 @@
-		html,body{
+/* Animations */
+
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50% { transform: scale(0.8); }
+  100% { transform: scale(1); }
+}
+
+@keyframes spin {
+  0%   { transform: rotate(30deg); }
+  100% { transform: rotate(210deg); }
+}
+@keyframes spin2 {
+  0%   { transform: rotate(150deg); }
+  100% { transform: rotate(330deg); }
+}
+
+html,body{
 			height:100vh;
 			margin:0;
 			padding:0;
@@ -12,6 +29,7 @@
 			justify-content:center;
 			align-items: flex-start;
 		}
+
 		section#app{
 			display:flex;
 			justify-content:flex-start;
@@ -25,7 +43,7 @@
 			padding:40px;
 			border-radius: 2px;
 			box-shadow: 0 2px 8px rgba(0,0,0,.33);
-			min-height: 660px;
+			min-height: 400px;
 		}
 		button{
 			font-family:'Baloo';
@@ -44,12 +62,17 @@
 		button#new-word-button:hover{
 			transform:scale(1.02);
 		}
-		button#add-player-button{
+		.add-remove-players{
 			margin-bottom: 40px;
+			display:flex;
+			width: 480px;
+			justify-content: space-around;
+			margin-top: 20px;
 		}
-		.button-disabled{
-			opacity:0.5;
+		button#add-player-button,button#remove-player-button{
+			margin-bottom:0;
 		}
+
 		.inputs-container{
 			height:auto;
 		}
@@ -84,14 +107,13 @@
 			border-bottom:1px dashed rgb(220,220,220);
 		}
 		button#go-button{
-			position: absolute;
-			bottom:0px;
+
 		}
 		.visible-iframe{
+			display: none;
 			position: relative;
 			width: 510px;
 			height:230px;
-			display: flex;
 			align-items: center;
 			justify-content: center;
 			overflow:hidden;
@@ -104,4 +126,12 @@
 			position:absolute;
 			top: -60px;
 			left: -2px;
+		}
+		.disabled{
+			opacity:0.5;
+			cursor:not-allowed;
+		}
+		.active{
+			opacity:1;
+			cursor:default;
 		}

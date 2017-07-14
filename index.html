@@ -10,19 +10,23 @@
 <body>
 <div class="container">
 	<section id="app">
-		<button id="new-word-button">G</button>
+		<button id="new-word-button">New Random Word</button>
 		<div class="input-container">
 			<div class="word-inputs 1-word-inputs">
-				<input class="button-disabled" type="text" placeholder="before" id="1-word-before">
+				<input class="disabled" type="text" placeholder="before" id="1-word-before" disabled/>
 				<p class="random-word"></p>
-				<input class="button-disabled" type="text" placeholder="after" id="1-word-after">
+				<input class="disabled" type="text" placeholder="after" id="1-word-after" disabled/>
 			</div>
 		</div>
-		<button id="add-player-button">Add another player</button>
+		<div class="add-remove-players">
+			<button id="add-player-button">Add another player</button>
+		<button id="remove-player-button">Remove player</button>
+		</div>
+		
 		<div class="visible-iframe">
 			<iframe class="graph" scrolling="no"></iframe>
 		</div>
-		<button id="go-button">GO!</button>
+		<button id="go-button" class="disabled" disabled>GO!</button>
 	</section>
 </div>
 </body>
