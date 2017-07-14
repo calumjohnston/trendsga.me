@@ -23,11 +23,30 @@ html,body{
 			background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
 			background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 		}
+		.icon{
+			font-size:25px;
+			position: relative;
+			top: 3px;
+		}
+		.ion-minus-circled{
+			right: 17px;
+		}
+		.ion-plus-circled{
+			top: 3px;
+			right: 7px;
+		}
 		.container{
 			height:100%;
 			display:flex;
-			justify-content:center;
-			align-items: flex-start;
+			justify-content:flex-start;
+			align-items: center;
+			flex-direction:column;
+		}
+		header{
+			color: white;
+			font-size: 3em;
+			font-family: Baloo;
+			margin-top: 40px;
 		}
 
 		section#app{
@@ -38,7 +57,7 @@ html,body{
 			position:relative;
 			background:white;
 			text-align:center;
-			margin-top: 80px;
+			margin-top: 40px;
 			margin-bottom: 80px;
 			padding:40px;
 			border-radius: 2px;
@@ -72,7 +91,12 @@ html,body{
 		button#add-player-button,button#remove-player-button{
 			margin-bottom:0;
 		}
-
+		button#add-player-button{
+			background:mediumseagreen;
+		}
+		button#remove-player-button{
+			background: indianred;
+		}
 		.inputs-container{
 			height:auto;
 		}
