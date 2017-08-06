@@ -45,10 +45,9 @@ html,body{
 		header{
 			color: white;
 			font-size: 3em;
-			font-family: Baloo;
+			font-family: 'Baloo';
 			margin-top: 40px;
 		}
-
 		section#app{
 			display:flex;
 			justify-content:flex-start;
