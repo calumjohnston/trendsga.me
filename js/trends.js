@@ -1,8 +1,6 @@
-
-
 $( document ).ready(function() {
 
-var words_list = ["winter","hard","pumpkin","automotive","design","construction","carrot","ship","float","brick"];
+var words_list = ["apple","bank","bottle","child","explosive","garden","winter","hard","pumpkin","gate","design","flower","carrot","ship","float","brick"];
 var current_word = "";
 var player_count = 1;
 var playerNo = 5;
@@ -10,9 +8,6 @@ var inputs={};
 var words_data = {};
 var position_data = {};
 var player_string;
-
-
-
 
 function generateWord(){
 	var random_word = words_list[Math.floor(Math.random()*words_list.length)];
@@ -72,7 +67,6 @@ function buildURL(){
 	$('iframe').attr("src", graph_url);
 }
 
-
 $('body').on('input',"input", function() {
 	$("#go-button").removeClass("disabled");
 	$("#go-button").prop("disabled", false);
@@ -94,9 +88,7 @@ $("#new-word-button").on("click", function(){
 });
 
 $("#add-player-button").on("click", function(){
-
 	addAnotherPlayer();
-	
 });
 
 $("#remove-player-button").on("click", function(){
@@ -109,8 +101,6 @@ $("#go-button").on("click", function(){
 	buildURL();
 	$(".visible-iframe").css("display","flex");
 });
-
-
 
 });
 
