@@ -1,25 +1,8 @@
-/* Animations */
-
-@keyframes pulse {
-  0%   { transform: scale(1); }
-  50% { transform: scale(0.8); }
-  100% { transform: scale(1); }
-}
-
-@keyframes spin {
-  0%   { transform: rotate(30deg); }
-  100% { transform: rotate(210deg); }
-}
-@keyframes spin2 {
-  0%   { transform: rotate(150deg); }
-  100% { transform: rotate(330deg); }
-}
-
 html,body{
 			height:100vh;
 			margin:0;
 			padding:0;
-			background: indianred;
+			background: #13B7F2;
 
 		}
 		.icon{
