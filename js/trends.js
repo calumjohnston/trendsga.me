@@ -1,6 +1,11 @@
 $( document ).ready(function() {
 
-var words_list = ["apple","bank","bottle","child","explosive","garden","winter","hard","pumpkin","gate","design","flower","carrot","ship","float","brick"];
+var words_list = ["Adult", "Aeroplane", "Air", "Airforce", "Airport", "Album", "Alphabet", "Apple", "Arm", "Backpack", "Balloon", "Banana", "Bank", "Barbecue", "Bathroom", "Bathtub", "Bible", "Bird", "Bomb", "Book", "Boss", "Bottle", "Bowl", "Box", "Boy", "Brain", "Bridge", "Button", "Car", "Fork", "Freeway", "Fruit", "Fungus", "Game", "Garden", "Gas", "Gate", "Gemstone", "Girl", "Gloves",
+"God", "Grapes", "Guitar", "Hammer", "Hat", "Hieroglyph", "Highway", "Horoscope", "Horse", "Hose", "Ice", "Ice-cream", "Insect", "Jet", "fighter", "Junk", "Kitchen", "Knife", "Leather", "jacket", "Leg", "Library", "Liquid", "Magnet", "Man", "Map", "Maze", "Meat", "Meteor", "Microscope", "Milk", "Milkshake", "Mist", "Money", "Monster",
+"Mosquito", "Mouth", "Nail", "Navy", "Necklace", "Needle", "Onion", "PaintBrush", "Pants", "Parachute", "Passport", "Pebble", "Pendulum", "Pepper", "Perfume", "Pillow", "Plane", "Planet", "Pocket", "Potato", "Printer", "Prison", "Pyramid", "Radar", "Rainbow", "Record", "Restaurant", "Rifle", "Ring", "Robot", "Rock", "Rocket", "Roof",
+"Room", "Rope", "Saddle", "Salt", "Sandpaper", "Sandwich", "Satellite", "School", "Sex", "Ship", "Shoes", "Shop", "Shower", "Signature", "Skeleton", "Slave", "Snail", "Software", "Solid", "Space", "Shuttle", "Spectrum", "Sphere", "Spice", "Spiral", "Spoon", "Spot", "Light", "Square", "Staircase", "Star", "Stomach", "Sun", "Sunglasses",
+"Surveyor", "Swimming", "Pool", "Sword", "Table", "Tapestry", "Teeth", "Telescope", "Television", "Tennis", "Tiger", "Toilet", "Tongue", "Torch", "Torpedo", "Train", "Treadmill", "Triangle", "Tunnel", "Typewriter", "Umbrella", "Vacuum", "Vampire", "Videotape", "Vulture", "Water", "Weapon", "Web", "Wheelchair", "Window",
+"Woman", "Worm", "X-ray"];
 var current_word = "";
 var player_count = 1;
 var playerNo = 5;
