@@ -78,8 +78,8 @@ html,body{
 			color:white;
 			font-weight:bold;
 			font-size:15px;
-			height:50px;
-			width:200px;
+			height: 50px;
+			width: 240px;
 			border: none;
 			border-radius:2px;
 			margin-bottom:40px;
@@ -96,14 +96,14 @@ html,body{
 		.add-remove-players{
 			margin-bottom: 40px;
 			display:flex;
-			width: 480px;
+			width: 530px;
 			justify-content: space-around;
 			margin-top: 20px;
 		}
 		button#add-player-button,button#remove-player-button{
 			margin-bottom:0;
 			line-height: 32px;
-			width: 220px;
+			/* width: 220px; */
 		}
 		button#add-player-button{
 			background:mediumseagreen;
@@ -191,7 +191,7 @@ html,body{
 			}
 			.add-remove-players{
 				flex-direction:column;
-				width:200px;
+				width: 250px;
 				height:120px;
 			}
 			.word-inputs{
