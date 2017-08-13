@@ -103,10 +103,11 @@ html,body{
 		button#add-player-button,button#remove-player-button{
 			margin-bottom:0;
 			line-height: 32px;
+			width: 220px;
 		}
 		button#add-player-button{
 			background:mediumseagreen;
-			width: 220px;
+			/* width: 220px; */
 		}
 		button#remove-player-button{
 			background: indianred;
