@@ -40,6 +40,7 @@ html,body{
 			border: 1px solid rgba(220, 220, 220, 0.98);
 			border-radius: 5px;
 			padding: 20px 40px;
+			margin-bottom:40px;
 		}
 		#rules i{
 			position:absolute;
