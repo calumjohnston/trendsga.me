@@ -106,6 +106,8 @@ $("#go-button").on("click", function(){
 	buildURL();
 	$(".visible-iframe").css("display","flex");
 });
-
+$(".close-rules").on("click", function(){
+	$("#rules").hide();
+});
 });
 

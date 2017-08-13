@@ -34,11 +34,19 @@ html,body{
 			margin-top: 40px;
 		}
 		#rules{
+			position: relative;
 			max-width: 650px;
 			margin-top: 20px;
 			border: 1px solid rgba(220, 220, 220, 0.36);
 			border-radius: 5px;
 			padding: 20px 40px;
+		}
+		#rules i{
+			position:absolute;
+			top:5px;
+			right:15px;
+			color: #dcdcdc;
+			cursor:pointer;
 		}
 		#rules ol li{
 			line-height: 32px;
