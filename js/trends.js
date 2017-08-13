@@ -107,7 +107,7 @@ $("#go-button").on("click", function(){
 	$(".visible-iframe").css("display","flex");
 });
 $(".close-rules").on("click", function(){
-	$("#rules").hide();
+	$("#rules").slideUp();
 });
 });
 
