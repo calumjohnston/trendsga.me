@@ -162,6 +162,7 @@ html,body{
 			align-items: center;
 			justify-content: center;
 			overflow:hidden;
+			transform: scale(calc(100vw/));
 			margin-bottom: 90px;
 		}
 		iframe{
